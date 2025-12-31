@@ -1,2 +1,1 @@
-# blksheepos-site
-BLKSHEEP OS — Coming Soon
+This repo hosts the BLKSHEEP OS coming soon page.
