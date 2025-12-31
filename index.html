@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BLKSHEEP OS — Coming Soon</title>
+  <meta name="description" content="BLKSHEEP OS is in build. Coming soon." />
+  <meta name="theme-color" content="#000000" />
+  <style>
+    :root { --bg:#000; --fg:#fff; --muted:rgba(255,255,255,.7); --line:rgba(255,255,255,.14); }
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(900px 500px at 50% 30%,rgba(255,255,255,.08),transparent 60%),var(--bg);
+      color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;display:flex;align-items:center;justify-content:center;padding:28px;}
+    .card{width:min(820px,100%);border:1px solid var(--line);border-radius:18px;padding:28px;background:rgba(0,0,0,.6);}
+    .logo{display:flex;gap:12px;align-items:center;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+    .mark{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;font-weight:900;}
+    h1{margin:20px 0 10px;font-size:clamp(28px,4vw,44px);line-height:1.05;}
+    p{color:var(--muted);line-height:1.6;margin:0 0 16px;}
+    .pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:12px;display:inline-block;margin:6px 8px 0 0;color:var(--muted);}
+    a.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--fg);font-weight:600;margin-top:18px;}
+    footer{margin-top:24px;font-size:12px;color:rgba(255,255,255,.5)}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo"><div class="mark">BLK</div><div>BLKSHEEP OS</div></div>
+
+    <h1>Infrastructure first.<br>Public surface next.</h1>
+    <p>BLKSHEEP OS is being built as a real operating system for creators and operators. No hype. Proof only.</p>
+
+    <div>
+      <span class="pill">Status: Private build</span>
+      <span class="pill">Coming Soon</span>
+      <span class="pill">Domain: blksheepos.com</span>
+    </div>
+
+    <a class="btn" href="mailto:hello@blksheepos.com?subject=BLKSHEEP%20OS%20Early%20Access">Request early access</a>
+
+    <footer>© <span id="y"></span> BLKSHEEP OS</footer>
+  </main>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
